@@ -11,6 +11,9 @@ cp ./scripts/put_data_to_kinesis/liveness_data.py ./scripts/put_data_to_kinesis/
 pip install --target ./scripts/get_data_from_opensearch/pkg -r ./scripts/requirements.txt
 cp ./scripts/get_data_from_opensearch/get_data_from_opensearch.py ./scripts/get_data_from_opensearch/pkg/get_data_from_opensearch.py
 
+pip install --target ./scripts/put_data_to_opensearch_athena_history/pkg -r ./scripts/requirements.txt
+cp ./scripts/put_data_to_opensearch_athena_history/put_data_to_opensearch_athena_history.py ./scripts/put_data_to_opensearch_athena_history/pkg/put_data_to_opensearch_athena_history.py
+
 
 cd terraform
 terraform init
